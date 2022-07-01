@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Starbucks</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="#"><img src="/imgs/starbucks-logo.png" class="logo"></a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Sobre nós</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </header>
+    <div class="conteiner">
+      <div class="caixadetexto">
+        <h2>It's more than coffee<br>It's <span>Starbucks</span></h2>
+        <p>Os sócios Jerry Baldwin, Zev Siegel e Gordon Bowker inauguraram a primeira loja em 1971, em Seattle. De forma resumida, o projeto surgiu porque os três eram apaixonados por cafés e chás. Para tirar a ideia do papel, eles pediram dinheiro emprestado e nomearam como Starbucks como uma uma referência ao livro Moby Dick</p>
+        <a href="#">Ler mais</a>
+      </div>
+      <div class="cafe">
+        <img src="/imgs/coffee0.png" class="starbucks">
+      </div>
+    </div>
+    <ul class="coffee">
+      <li><img src="/imgs/img0.png" onclick="imgSlider('/imgs/coffee0.png')"></li>
+      <li><img src="/imgs/img1.png" onclick="imgSlider('/imgs/coffee1.png')"></li>
+      <li><img src="/imgs/img2.png" onclick="imgSlider('/imgs/coffee2.png')"></li>
+    </ul>
+    <ul class="rs">
+      <li><a href="https://www.instagram.com/starbucksbrasil/"><img src="/imgs/instagram-logo.png"></a></li>
+
+    </ul>
+  </section>
+
+  <script type="text/javascript">
+    function imgSlider(anything) {
+      document.querySelector('.starbucks').src = anything;
+    }
+  </script>
+</body>
+
+</html>
